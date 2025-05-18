@@ -1,0 +1,134 @@
+.landingPageContainer, .homeContainer {
+  width: 100vw;
+  height: 100vh;
+  background: url("https://img.freepik.com/free-photo/artistic-blurry-colorful-wallpaper-background_58702-8553.jpg?ga=GA1.1.1549324807.1651847985&semt=ais_hybrid&w=740"); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: rgb(255, 255, 255);
+  padding-top: 30px ;
+}
+
+.redDot {
+  width: 16px;
+  height: 16px;
+  background: red;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 8px;
+  box-shadow: 0 0 8px 2px #ff0000;
+  border: 2px solid white;
+}
+
+.landingPageContainer nav, .navBar{
+  padding-inline: 1.2rem;
+  padding-block: 1.6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(129, 129, 129, 0.281);
+  filter: drop-shadow(0px 2px 5px rgba(255, 255, 255, 0.3));
+  border-radius: 0px 0px 20px 20px;
+  max-width: calc(100vw - 2rem);
+  margin: 0px auto 0 auto;
+}
+
+.landingPageContainer nav h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #dcc2ff;
+}
+
+.landingPageContainer nav .navlist {
+  display: flex;
+  gap: 1.6rem;
+  cursor: pointer;
+  margin-right: 20px;
+  font-weight: 500;
+}
+
+.landingMainContainer {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 2rem;
+  height: 80vh;
+  align-items: center;
+}
+
+.landingMainContainer>div:nth-child(1) {
+  font-size: 1.8rem;
+}
+
+.landingMainContainer>div:nth-child(1) div[role='button'] {
+  background: #00000050;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  width: fit-content;
+  border-radius: 20px;
+  margin-top: 1.9rem;
+}
+
+.landingMainContainer>div:nth-child(1) div[role='button'] a {
+  text-decoration: none;
+  color: #dcc2ff;
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+
+.landingMainContainer>div:nth-child(2) img {
+  height: 70vh;
+  width: auto;
+}
+
+/* .navBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 20px;
+  text-align: center;
+
+} */
+.meetContainer {
+  display: flex;
+  padding-inline: 20px;
+  height: 80vh;
+  gap: 10vw;
+  justify-content: center;
+}
+
+
+
+.leftPanel {
+  height: 100%;
+  display: flex;
+  width: 20rem;
+  align-items: center;
+
+}
+
+.rightPanel {
+  display: flex;
+  align-items: center;
+}
+
+.rightPanel > img {
+  width: auto;
+  height: auto;
+  border-radius: 20px;
+}
+
+.animate {
+  animation: infinite 2.4s linear;
+  animation-name: animate;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
